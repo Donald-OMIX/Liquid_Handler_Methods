@@ -1,0 +1,38 @@
+﻿<RunSetupData PlateName="Greiner 96" xmlns="http://ttplabtech.com/XAMLRunSetupData">
+  <RunSetupData.AFRsConfiguration>
+    <AFRsConfiguration />
+  </RunSetupData.AFRsConfiguration>
+  <Layer DispensePattern="ColumnTypeWriter" LayerIndex="0" LayerName="RDX-ROX-OLIGO" LayerVolume="1" UseCSVDataAsVolumes="True">
+    <Layer.Liquids>
+      <Liquid LiquidName="RDX" NumOfSplits="2">
+        <Liquid.DispenseRegions>
+          <DispenseRegion Height="8" StartCol="0" StartRow="0" VolumeInUL="500" Width="2" />
+        </Liquid.DispenseRegions>
+        <HeadAssignment HeadIndex="6" SplitIndex="1" />
+        <HeadAssignment HeadIndex="7" SplitIndex="2" />
+      </Liquid>
+      <Liquid LiquidName="ROX" NumOfSplits="1">
+        <Liquid.DispenseRegions>
+          <DispenseRegion Height="8" StartCol="0" StartRow="0" VolumeInUL="12.5" Width="2" />
+        </Liquid.DispenseRegions>
+        <HeadAssignment HeadIndex="5" ReservoirType="LowDeadVolume" SplitIndex="1" />
+      </Liquid>
+      <Liquid LiquidName="OLIGO" NumOfSplits="1">
+        <Liquid.DispenseRegions>
+          <DispenseRegion Height="8" StartCol="0" StartRow="0" VolumeInUL="25" Width="2" />
+        </Liquid.DispenseRegions>
+        <HeadAssignment HeadIndex="4" ReservoirType="LowDeadVolume" SplitIndex="1" />
+      </Liquid>
+    </Layer.Liquids>
+  </Layer>
+  <Layer DispensePattern="ColumnTypeWriter" LayerIndex="1" LayerName="EPI" LayerVolume="62.5" UseCSVDataAsVolumes="False">
+    <Layer.Liquids>
+      <Liquid LiquidName="EPI" NumOfSplits="1">
+        <Liquid.DispenseRegions>
+          <DispenseRegion Height="8" StartCol="0" StartRow="0" VolumeInUL="62.5" Width="2" />
+        </Liquid.DispenseRegions>
+        <HeadAssignment HeadIndex="3" ReservoirType="LowDeadVolume" SplitIndex="1" />
+      </Liquid>
+    </Layer.Liquids>
+  </Layer>
+</RunSetupData>
